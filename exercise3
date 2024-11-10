@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline;
+            list-style: none;
+            padding: 24px;
+            font-weight: bolder;
+        }
+
+        nav {
+            background-color: cadetblue;
+            padding: 12px;
+            border: 2px solid black;
+            position: sticky;
+            top: 0px;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(71, 82, 104);
+            margin: 0 200px;
+        }
+
+        .boxes {
+            display: flex;
+            border: 2px solid black;
+            height: 400px;
+            background-color: rgb(76, 95, 56);
+            margin: 20px;
+        }
+
+        .foot {
+            background-color: black;
+            color: beige;
+            border: 2px solid black;
+            height: 100px;
+            margin: 39px;
+            border-radius: 19px;
+        }
+
+        .last {
+            background-color: rgb(129, 109, 82);
+            height: 100px;
+        }
+
+        .logo {
+            justify-content: end;
+            position: fixed;
+            z-index: 1;
+            right: 10px;
+            bottom: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Rules</li>
+            <li>Contact</li>
+            <li>Help</li>
+        </ul>
+    </nav>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="logo"> <img width="120px"
+            src="https://ddesignplus.com/wp-content/uploads/2014/12/Circular-Logo-1022x1024.png" alt=""></div>
+    <footer>
+        <div class="foot"> WELCOME TO THE NEW EXERCISE</div>
+        <div class="last"></div>
+    </footer>
+</body>
+
+</html>
