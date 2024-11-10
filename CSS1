@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p:first-child{
+            color: red;
+            background-color: yellow;
+        }
+        div p{
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat nostrum, iste dolorum vel nesciunt soluta sed delectus cum ducimus eius dolore perferendis!</p>
+        <p>I am another paragraph</p>
+        <p>I am also another paragraph</p>
+        <p>para number three</p>
+        <p>para number four</p>
+        <p>para number five</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat nostrum, iste dolorum vel nesciunt soluta sed delectus cum ducimus eius dolore perferendis!</p>
+        <p>I am another paragraph</p>
+        <p>I am also another paragraph</p>
+        <p>para number three</p>
+        <p>para number four</p>
+        <p>para number five</p>
+    </div>
+</body>
+</html>
