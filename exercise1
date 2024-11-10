@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design card</title>
+    <style>
+        body {
+            background-color: rgb(154, 207, 190);
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 80vh;
+            width: 317px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            position: fixed;
+            background-color: aliceblue;
+        }
+
+        p {
+            margin: 6px;
+        }
+
+        p img {
+            border-radius: 10px;
+        }
+
+        .some {
+            margin: 8px;
+            padding: 4px;
+            border: 2px solid grey;
+            display: inline;
+            border-radius: 10px;
+
+        }
+
+        h6 {
+            font-style: italic;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button button {
+            background-color: aquamarine;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>
+            <img width="300" src="riverside-in-california.webp" alt="scenary">
+        </p>
+        <div class="some">nature</div>
+        <div class="some">river</div>
+        <H2>HELLO TARUN </H2>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea maiores quisquam nisi, fugit vel
+            veniam quam sit, laudantium hic labore. Sit veritatis enim blanditiis vel tenetur facere corporis eligendi
+            dolores praesentium eius.</h6>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+</body>
+
+</html>
