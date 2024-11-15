@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(images/netbackground.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+.main .box{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.64;
+    position: absolute;
+    top: 0;
+}
+nav{
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    color: red;
+    width: 124px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.con{
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+.con> :first-child{
+    font-size: 48px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font: bolder;
+    text-align: center;
+}
+.con> :nth-child(2){
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.con> :nth-child(3){
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.line{
+    height: 5px;
+    background-color: rgb(68, 67, 67);
+}
+.kuch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.kuchorr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.redbtnl{
+    background-color: red;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 450;
+    font-size: 25px;
+    cursor: pointer;
+}
+.redbtns{
+    background-color: red;
+    padding: 6px 11px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+}
+.main input{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    font-weight: 250;
+    font-size: 17px;
+    background-color: rgba(23, 23, 23, 0.2);
+    padding: 9px 20px;
+    color: whitesmoke;
+}
+.eng{
+    padding: 6px 11px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    cursor: pointer;
+}
+p{
+    color: white;
+    font-weight: 600;
+    margin: 15px 30px;
+    padding: 10px;
+    font-size: x-large;
+    font-family: system-ui;
+}
+.bt :first-child{
+    padding: 6px 11px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 4px 15px 4px 40px;
+}
+.bt :nth-child(2){
+    padding: 6px 11px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.boxes{
+    display: flex;
+    width: 100vw;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.box img{
+    border-radius: 8px;
+}
+.booms{
+    width: 100vw;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 20px;
+}
+.boom{
+    width: 180px;
+    height: 230px;
+    background-image: url(https://pics.craiyon.com/2023-11-19/eTUAA9llSMeFuKnwaBbe3g.webp);
+    color: white;
+    font-family: system-ui;
+    padding: 11px;
+    border-radius: 9px;
+}
+.rects{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.rect{
+    width: 69vw;
+    height: 50px;
+    background-color: #2d2d2d;
+    color: white;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: system-ui;
+    font-weight: 600;
+    font-size: larger;
+    transition: all 295ms ease-in-out;
+    cursor: pointer;
+}
+.rect:hover{
+    background-color: #414141;
+}
+article{
+    color: white;
+    margin: 5px 46px;
+    font-family: system-ui;
+    font-weight: 300;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin:40px  auto;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item a{
+    color: white;
+    text-decoration: underline;
+    font-family: system-ui;
+    font-size: smaller;
+    font-weight: 400;
+}
+.end{
+    color: white;
+    margin: 17px;
+    text-align: center;
+    font-family: system-ui;
+    font-size: large;
+    font-weight: 400;
+}
+</style>
+<body>
+    <div class="main">
+        <nav>
+            <span>
+                <img width="73" src="images/logo.svg" alt="">
+            </span>
+            <div class="kuchorr">
+                <button class="btn eng" >English </button>
+                <button class="btn redbtns" >Sign In</button>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <div class="con">
+            <span>Unlimited movies, TV shows and more</span>
+            <span>Starts at ₹149. Cancel at any time.</span>
+
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="kuch">
+                <input type="text" placeholder="Email Address">
+                <button class="btn redbtnl" >Get Started &gt;</button>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="container">
+        <p>Trending Now</p>
+        
+        <div class="bt">
+            <button>India &gt;</button>
+            <button>Movies &gt;</button>
+        </div>
+        <div class="boxes">
+            <div class="box box1">
+                <img src="images/img1.webp" alt="">
+            </div>
+            <div class="box box2">
+                <img src="images/img2.webp" alt="">
+            </div>
+            <div class="box box3">
+                <img src="images/img3.webp" alt="">
+            </div>
+            <div class="box box4">
+                <img src="images/img4.webp" alt="">
+            </div>
+            <div class="box box5">
+                <img src="images/img5.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <p>More Reasons to join</p>
+        <div class="booms">
+            <div class="boom">
+                <h2>Enjoy on your TV</h2>
+                <h6>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h6>
+            </div>
+            <div class="boom">
+                <h2>Download your shows to watch offline</h2>
+                <h6>Save your favourites easily and always have something to watch.</h6>
+            </div>
+            <div class="boom">
+                <h2>Watch Everywhere</h2>
+                <h6>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</h6>
+            </div>
+            <div class="boom">
+                <h2>Create profiles for kids</h2>
+                <h6>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</h6>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <p>Frequently Asked Questions</p>
+        <div class="rects">
+        <div class="rect">What is Netflix?</div>
+        <div class="rect">How much does Netflix costs?</div>
+        <div class="rect">Where can I watch?</div>
+        <div class="rect">How do I cancel?</div>
+        <div class="rect">What can I watch on Netflix?</div>
+        <div class="rect">Is Netflix good for kids?</div>
+    </div>
+    </div>
+    <article>Questions? Call +919368394188</article>
+    <footer>
+        <div class="footer-item">
+            <a href="faq">FAQ</a>
+            <a href="faq">Investor Relations</a>
+            <a href="faq">Privacy</a>
+            <a href="faq">Speed Test</a>
+        </div>
+        <div class="footer-item">
+            <a href="faq">Help Centre</a>
+            <a href="faq">Jobs</a>
+            <a href="faq">Cookie Preferences</a>
+            <a href="faq">Legal Notices</a>
+        </div>
+        <div class="footer-item">
+            <a href="faq">Account</a>
+            <a href="faq">Ways to Watch</a>
+            <a href="faq">Corporate Information</a>
+            <a href="faq">Only on Netflix</a>
+        </div>
+        <div class="footer-item">
+            <a href="faq">Media Centre</a>
+            <a href="faq">Terms of Use</a>
+            <a href="faq">Contact Us</a>
+        </div>
+    </footer>
+    <div class="kuchorr">
+        <button class="btn eng" >English </button>
+        </div>
+        <div class="end">
+            Netflix India
+        </div>
+</body>
+
+</html>
